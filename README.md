@@ -34,6 +34,7 @@ Animal.BackgroundTransparency = 1.000
 Animal.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Animal.Position = UDim2.new(0.192249238, 0, 0.308999956, 0)
 Animal.Size = UDim2.new(0, 472, 0, 266)
+Animal.Visible = false
 Animal.Image = "rbxassetid://3570695787"
 Animal.ImageColor3 = Color3.fromRGB(40, 40, 40)
 Animal.ScaleType = Enum.ScaleType.Slice
@@ -253,7 +254,7 @@ TextButton_Roundify_12px.SliceScale = 0.120
 
 -- Scripts:
 
-local function XAEDTA_fake_script() -- ScriptButton.LocalScript 
+local function GWHN_fake_script() -- ScriptButton.LocalScript 
 	local script = Instance.new('LocalScript', ScriptButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -262,8 +263,8 @@ local function XAEDTA_fake_script() -- ScriptButton.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = true
 	end)
 end
-coroutine.wrap(XAEDTA_fake_script)()
-local function LVLWLJ_fake_script() -- SettingsButton.LocalScript 
+coroutine.wrap(GWHN_fake_script)()
+local function GPGCOS_fake_script() -- SettingsButton.LocalScript 
 	local script = Instance.new('LocalScript', SettingsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -272,8 +273,8 @@ local function LVLWLJ_fake_script() -- SettingsButton.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
 	end)
 end
-coroutine.wrap(LVLWLJ_fake_script)()
-local function IXJY_fake_script() -- CreditsButton.LocalScript 
+coroutine.wrap(GPGCOS_fake_script)()
+local function IYYKE_fake_script() -- CreditsButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -282,36 +283,36 @@ local function IXJY_fake_script() -- CreditsButton.LocalScript
 		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
 	end)
 end
-coroutine.wrap(IXJY_fake_script)()
-local function ECGUIBW_fake_script() -- HUBASTRALButton.LocalScript 
+coroutine.wrap(IYYKE_fake_script)()
+local function XUIZGX_fake_script() -- HUBASTRALButton.LocalScript 
 	local script = Instance.new('LocalScript', HUBASTRALButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Kylan83728/V2/refs/heads/main/README.md"))()
 	end)
 end
-coroutine.wrap(ECGUIBW_fake_script)()
-local function NHDUEV_fake_script() -- ADMINButton.LocalScript 
+coroutine.wrap(XUIZGX_fake_script)()
+local function LLYUFC_fake_script() -- ADMINButton.LocalScript 
 	local script = Instance.new('LocalScript', ADMINButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(NHDUEV_fake_script)()
-local function BFKHHOH_fake_script() -- RIVALSButton.LocalScript 
+coroutine.wrap(LLYUFC_fake_script)()
+local function DGSIY_fake_script() -- RIVALSButton.LocalScript 
 	local script = Instance.new('LocalScript', RIVALSButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/zeynwq/main/main/rivals1"))()()
 	end)
 end
-coroutine.wrap(BFKHHOH_fake_script)()
-local function EKZI_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(DGSIY_fake_script)()
+local function FCIPETX_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Animal.Visible = not script.Parent.Parent.Animal.Visible
 	end)
 end
-coroutine.wrap(EKZI_fake_script)()
+coroutine.wrap(FCIPETX_fake_script)()
