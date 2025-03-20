@@ -18,6 +18,7 @@ local ScriptsFarme = Instance.new("Frame")
 local animals = Instance.new("TextButton")
 local rivals = Instance.new("TextButton")
 local admin = Instance.new("TextButton")
+local speed = Instance.new("TextButton")
 local SettingsFarme = Instance.new("Frame")
 local TextLabel_4 = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
@@ -146,7 +147,6 @@ ScriptsFarme.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScriptsFarme.BorderSizePixel = 0
 ScriptsFarme.Position = UDim2.new(0.237337187, 0, 0.175066307, 0)
 ScriptsFarme.Size = UDim2.new(0, 527, 0, 311)
-ScriptsFarme.Visible = false
 
 animals.Name = "animals"
 animals.Parent = ScriptsFarme
@@ -181,7 +181,7 @@ admin.Parent = ScriptsFarme
 admin.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
 admin.BorderColor3 = Color3.fromRGB(0, 0, 0)
 admin.BorderSizePixel = 0
-admin.Position = UDim2.new(0, 364, 0, 20)
+admin.Position = UDim2.new(0, 190, 0, 241)
 admin.Size = UDim2.new(0, 146, 0, 50)
 admin.Font = Enum.Font.SourceSansItalic
 admin.Text = "Admin"
@@ -189,6 +189,20 @@ admin.TextColor3 = Color3.fromRGB(255, 255, 255)
 admin.TextScaled = true
 admin.TextSize = 14.000
 admin.TextWrapped = true
+
+speed.Name = "speed"
+speed.Parent = ScriptsFarme
+speed.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speed.BorderSizePixel = 0
+speed.Position = UDim2.new(0, 20, 0, 241)
+speed.Size = UDim2.new(0, 146, 0, 50)
+speed.Font = Enum.Font.SourceSansItalic
+speed.Text = "speed"
+speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+speed.TextScaled = true
+speed.TextSize = 14.000
+speed.TextWrapped = true
 
 SettingsFarme.Name = "SettingsFarme"
 SettingsFarme.Parent = astral
@@ -227,7 +241,7 @@ TextButton.TextWrapped = true
 
 -- Scripts:
 
-local function NCVQL_fake_script() -- ScriptsButton.LocalScript 
+local function FCZYRRO_fake_script() -- ScriptsButton.LocalScript 
 	local script = Instance.new('LocalScript', ScriptsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -236,8 +250,8 @@ local function NCVQL_fake_script() -- ScriptsButton.LocalScript
 		script.Parent.Parent.Parent.SettingsFarme.Visible = false
 	end)
 end
-coroutine.wrap(NCVQL_fake_script)()
-local function CUICOOE_fake_script() -- CreditsButton.LocalScript 
+coroutine.wrap(FCZYRRO_fake_script)()
+local function MTDDFGH_fake_script() -- CreditsButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -246,8 +260,8 @@ local function CUICOOE_fake_script() -- CreditsButton.LocalScript
 		script.Parent.Parent.Parent.SettingsFarme.Visible = false
 	end)
 end
-coroutine.wrap(CUICOOE_fake_script)()
-local function JQOQM_fake_script() -- SettingsButton.LocalScript 
+coroutine.wrap(MTDDFGH_fake_script)()
+local function NZEWO_fake_script() -- SettingsButton.LocalScript 
 	local script = Instance.new('LocalScript', SettingsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -256,36 +270,52 @@ local function JQOQM_fake_script() -- SettingsButton.LocalScript
 		script.Parent.Parent.Parent.SettingsFarme.Visible = true
 	end)
 end
-coroutine.wrap(JQOQM_fake_script)()
-local function AUGWZNH_fake_script() -- animals.LocalScript 
+coroutine.wrap(NZEWO_fake_script)()
+local function QSWTP_fake_script() -- animals.LocalScript 
 	local script = Instance.new('LocalScript', animals)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Kylan83728/V2/refs/heads/main/README.md"))()
 	end)
 end
-coroutine.wrap(AUGWZNH_fake_script)()
-local function JWLEL_fake_script() -- rivals.LocalScript 
+coroutine.wrap(QSWTP_fake_script)()
+local function JYORBN_fake_script() -- rivals.LocalScript 
 	local script = Instance.new('LocalScript', rivals)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/zeynwq/main/main/rivals1"))()()
 	end)
 end
-coroutine.wrap(JWLEL_fake_script)()
-local function KALQTQ_fake_script() -- admin.LocalScript 
+coroutine.wrap(JYORBN_fake_script)()
+local function DISMY_fake_script() -- admin.LocalScript 
 	local script = Instance.new('LocalScript', admin)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(KALQTQ_fake_script)()
-local function IIDAJ_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(DISMY_fake_script)()
+local function JIEXTQ_fake_script() -- speed.LocalScript 
+	local script = Instance.new('LocalScript', speed)
+
+	local button = script.Parent
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	
+	button.MouseButton1Click:Connect(function()
+		local humanoid = character:FindFirstChildOfClass("Humanoid")
+		if humanoid then
+			humanoid.WalkSpeed = 100 -- Changez la valeur pour ajuster la vitesse
+		end
+	end)
+	
+end
+coroutine.wrap(JIEXTQ_fake_script)()
+local function TPWX_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.astral.Visible = not script.Parent.Parent.astral.Visible
 	end)
 end
-coroutine.wrap(IIDAJ_fake_script)()
+coroutine.wrap(TPWX_fake_script)()
