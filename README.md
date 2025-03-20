@@ -16,9 +16,10 @@ local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
 local JeuxFrame = Instance.new("Frame")
 local AnimalSimulator = Instance.new("TextButton")
-local Rivals = Instance.new("TextButton")
+local BladebBall = Instance.new("TextButton")
 local CombatWarriors = Instance.new("TextButton")
 local Strongestbattlground = Instance.new("TextButton")
+local Rivals = Instance.new("TextButton")
 local ScriptsFrame = Instance.new("Frame")
 local Admin = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
@@ -154,17 +155,17 @@ AnimalSimulator.Text = "Animal SImulator"
 AnimalSimulator.TextColor3 = Color3.fromRGB(0, 0, 0)
 AnimalSimulator.TextSize = 14.000
 
-Rivals.Name = "Rivals"
-Rivals.Parent = JeuxFrame
-Rivals.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
-Rivals.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Rivals.BorderSizePixel = 0
-Rivals.Position = UDim2.new(0.420833319, 0, 0.0581395365, 0)
-Rivals.Size = UDim2.new(0, 159, 0, 50)
-Rivals.Font = Enum.Font.SourceSansBold
-Rivals.Text = "Rivals"
-Rivals.TextColor3 = Color3.fromRGB(0, 0, 0)
-Rivals.TextSize = 14.000
+BladebBall.Name = "Blade bBall"
+BladebBall.Parent = JeuxFrame
+BladebBall.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
+BladebBall.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BladebBall.BorderSizePixel = 0
+BladebBall.Position = UDim2.new(0.420833319, 0, 0.0581395365, 0)
+BladebBall.Size = UDim2.new(0, 159, 0, 50)
+BladebBall.Font = Enum.Font.SourceSansBold
+BladebBall.Text = "Blade Ball"
+BladebBall.TextColor3 = Color3.fromRGB(0, 0, 0)
+BladebBall.TextSize = 14.000
 
 CombatWarriors.Name = "Combat Warriors"
 CombatWarriors.Parent = JeuxFrame
@@ -189,6 +190,18 @@ Strongestbattlground.Font = Enum.Font.SourceSansBold
 Strongestbattlground.Text = "Strongest battlground"
 Strongestbattlground.TextColor3 = Color3.fromRGB(0, 0, 0)
 Strongestbattlground.TextSize = 14.000
+
+Rivals.Name = "Rivals"
+Rivals.Parent = JeuxFrame
+Rivals.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
+Rivals.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Rivals.BorderSizePixel = 0
+Rivals.Position = UDim2.new(0.0416666679, 0, 0.46802327, 0)
+Rivals.Size = UDim2.new(0, 159, 0, 50)
+Rivals.Font = Enum.Font.SourceSansBold
+Rivals.Text = "Rivals"
+Rivals.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rivals.TextSize = 14.000
 
 ScriptsFrame.Name = "ScriptsFrame"
 ScriptsFrame.Parent = Frame
@@ -225,7 +238,7 @@ TextButton.TextSize = 14.000
 
 -- Scripts:
 
-local function VJOV_fake_script() -- JeuxButton.LocalScript 
+local function PJMWNQ_fake_script() -- JeuxButton.LocalScript 
 	local script = Instance.new('LocalScript', JeuxButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -234,8 +247,8 @@ local function VJOV_fake_script() -- JeuxButton.LocalScript
 		script.Parent.Parent.Parent.CreditsFrame.Visible = false
 	end)
 end
-coroutine.wrap(VJOV_fake_script)()
-local function USEYLQ_fake_script() -- ScriptsButton.LocalScript 
+coroutine.wrap(PJMWNQ_fake_script)()
+local function ETMPU_fake_script() -- ScriptsButton.LocalScript 
 	local script = Instance.new('LocalScript', ScriptsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -244,8 +257,8 @@ local function USEYLQ_fake_script() -- ScriptsButton.LocalScript
 		script.Parent.Parent.Parent.CreditsFrame.Visible = false
 	end)
 end
-coroutine.wrap(USEYLQ_fake_script)()
-local function THWL_fake_script() -- CreditsButton.LocalScript 
+coroutine.wrap(ETMPU_fake_script)()
+local function JEABDS_fake_script() -- CreditsButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -254,52 +267,60 @@ local function THWL_fake_script() -- CreditsButton.LocalScript
 		script.Parent.Parent.Parent.CreditsFrame.Visible = true
 	end)
 end
-coroutine.wrap(THWL_fake_script)()
-local function NJXASV_fake_script() -- AnimalSimulator.LocalScript 
+coroutine.wrap(JEABDS_fake_script)()
+local function LMFFQFK_fake_script() -- AnimalSimulator.LocalScript 
 	local script = Instance.new('LocalScript', AnimalSimulator)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Kylan83728/V2/refs/heads/main/README.md"))()
 	end)
 end
-coroutine.wrap(NJXASV_fake_script)()
-local function XJCMOYR_fake_script() -- Rivals.LocalScript 
-	local script = Instance.new('LocalScript', Rivals)
+coroutine.wrap(LMFFQFK_fake_script)()
+local function OCOOD_fake_script() -- BladebBall.LocalScript 
+	local script = Instance.new('LocalScript', BladebBall)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://infernium.xyz/Blade.lua",true))()
 	end)
 end
-coroutine.wrap(XJCMOYR_fake_script)()
-local function NJAQAV_fake_script() -- CombatWarriors.LocalScript 
+coroutine.wrap(OCOOD_fake_script)()
+local function TKSUG_fake_script() -- CombatWarriors.LocalScript 
 	local script = Instance.new('LocalScript', CombatWarriors)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://infernium.xyz/cwfree.lua",true))()
 	end)
 end
-coroutine.wrap(NJAQAV_fake_script)()
-local function NPGVCZT_fake_script() -- Strongestbattlground.LocalScript 
+coroutine.wrap(TKSUG_fake_script)()
+local function QXRSGUT_fake_script() -- Strongestbattlground.LocalScript 
 	local script = Instance.new('LocalScript', Strongestbattlground)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://infernium.xyz/tsb.lua",true))()
 	end)
 end
-coroutine.wrap(NPGVCZT_fake_script)()
-local function JDMOFL_fake_script() -- Admin.LocalScript 
+coroutine.wrap(QXRSGUT_fake_script)()
+local function CXJRZTW_fake_script() -- Rivals.LocalScript 
+	local script = Instance.new('LocalScript', Rivals)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/zeynwq/main/main/rivals1"))()()
+	end)
+end
+coroutine.wrap(CXJRZTW_fake_script)()
+local function HTGM_fake_script() -- Admin.LocalScript 
 	local script = Instance.new('LocalScript', Admin)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(JDMOFL_fake_script)()
-local function GUONMY_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(HTGM_fake_script)()
+local function EXRLAZI_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 			script.Parent.Parent.Frame.Visible = not script.Parent.Parent.Frame.Visible
 	end)
 end
-coroutine.wrap(GUONMY_fake_script)()
+coroutine.wrap(EXRLAZI_fake_script)()
