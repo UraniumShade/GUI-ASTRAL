@@ -238,7 +238,7 @@ TextButton.TextSize = 14.000
 
 -- Scripts:
 
-local function PJMWNQ_fake_script() -- JeuxButton.LocalScript 
+local function WWREZYX_fake_script() -- JeuxButton.LocalScript 
 	local script = Instance.new('LocalScript', JeuxButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -247,8 +247,8 @@ local function PJMWNQ_fake_script() -- JeuxButton.LocalScript
 		script.Parent.Parent.Parent.CreditsFrame.Visible = false
 	end)
 end
-coroutine.wrap(PJMWNQ_fake_script)()
-local function ETMPU_fake_script() -- ScriptsButton.LocalScript 
+coroutine.wrap(WWREZYX_fake_script)()
+local function IWQXWB_fake_script() -- ScriptsButton.LocalScript 
 	local script = Instance.new('LocalScript', ScriptsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -257,8 +257,8 @@ local function ETMPU_fake_script() -- ScriptsButton.LocalScript
 		script.Parent.Parent.Parent.CreditsFrame.Visible = false
 	end)
 end
-coroutine.wrap(ETMPU_fake_script)()
-local function JEABDS_fake_script() -- CreditsButton.LocalScript 
+coroutine.wrap(IWQXWB_fake_script)()
+local function XRMZWC_fake_script() -- CreditsButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -267,60 +267,60 @@ local function JEABDS_fake_script() -- CreditsButton.LocalScript
 		script.Parent.Parent.Parent.CreditsFrame.Visible = true
 	end)
 end
-coroutine.wrap(JEABDS_fake_script)()
-local function LMFFQFK_fake_script() -- AnimalSimulator.LocalScript 
+coroutine.wrap(XRMZWC_fake_script)()
+local function IQMU_fake_script() -- AnimalSimulator.LocalScript 
 	local script = Instance.new('LocalScript', AnimalSimulator)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Kylan83728/V2/refs/heads/main/README.md"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Golddeathninja/af/refs/heads/main/a"))()
 	end)
 end
-coroutine.wrap(LMFFQFK_fake_script)()
-local function OCOOD_fake_script() -- BladebBall.LocalScript 
+coroutine.wrap(IQMU_fake_script)()
+local function HVVPG_fake_script() -- BladebBall.LocalScript 
 	local script = Instance.new('LocalScript', BladebBall)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://infernium.xyz/Blade.lua",true))()
 	end)
 end
-coroutine.wrap(OCOOD_fake_script)()
-local function TKSUG_fake_script() -- CombatWarriors.LocalScript 
+coroutine.wrap(HVVPG_fake_script)()
+local function FJSEUI_fake_script() -- CombatWarriors.LocalScript 
 	local script = Instance.new('LocalScript', CombatWarriors)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://infernium.xyz/cwfree.lua",true))()
 	end)
 end
-coroutine.wrap(TKSUG_fake_script)()
-local function QXRSGUT_fake_script() -- Strongestbattlground.LocalScript 
+coroutine.wrap(FJSEUI_fake_script)()
+local function WIZY_fake_script() -- Strongestbattlground.LocalScript 
 	local script = Instance.new('LocalScript', Strongestbattlground)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://infernium.xyz/tsb.lua",true))()
 	end)
 end
-coroutine.wrap(QXRSGUT_fake_script)()
-local function CXJRZTW_fake_script() -- Rivals.LocalScript 
+coroutine.wrap(WIZY_fake_script)()
+local function HXYNS_fake_script() -- Rivals.LocalScript 
 	local script = Instance.new('LocalScript', Rivals)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/zeynwq/main/main/rivals1"))()()
 	end)
 end
-coroutine.wrap(CXJRZTW_fake_script)()
-local function HTGM_fake_script() -- Admin.LocalScript 
+coroutine.wrap(HXYNS_fake_script)()
+local function XPSMGPN_fake_script() -- Admin.LocalScript 
 	local script = Instance.new('LocalScript', Admin)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(HTGM_fake_script)()
-local function EXRLAZI_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(XPSMGPN_fake_script)()
+local function LHDXL_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 			script.Parent.Parent.Frame.Visible = not script.Parent.Parent.Frame.Visible
 	end)
 end
-coroutine.wrap(EXRLAZI_fake_script)()
+coroutine.wrap(LHDXL_fake_script)()
