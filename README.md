@@ -18,331 +18,360 @@ local response = KeySystem:Init({
 	GuiParent = game.CoreGui, -- <object or nil> :3
 })
 
-if not response or not KeyValid then return end
--- HERE YOUR SCRIPT
 -- Gui to Lua
 -- Version: 3.2
 
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TopBar = Instance.new("Frame")
+local gui = Instance.new("ImageLabel")
 local SideBar = Instance.new("Frame")
 local JeuxButton = Instance.new("TextButton")
 local ScriptsButton = Instance.new("TextButton")
 local CreditsButton = Instance.new("TextButton")
+local TopBar = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local CreditsFrame = Instance.new("Frame")
 local TextLabel_2 = Instance.new("TextLabel")
 local TextLabel_3 = Instance.new("TextLabel")
-local JeuxFrame = Instance.new("Frame")
-local AnimalSimulator = Instance.new("TextButton")
-local BladebBall = Instance.new("TextButton")
-local CombatWarriors = Instance.new("TextButton")
-local Strongestbattlground = Instance.new("TextButton")
-local Rivals = Instance.new("TextButton")
 local ScriptsFrame = Instance.new("Frame")
-local Admin = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local JeuxFrame = Instance.new("Frame")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local ImageButton = Instance.new("ImageButton")
 
 --Properties:
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
-Frame.BackgroundTransparency = 0.200
-Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.256449163, 0, 0.24378109, 0)
-Frame.Size = UDim2.new(0, 642, 0, 400)
-Frame.Visible = false
-
-TopBar.Name = "TopBar"
-TopBar.Parent = Frame
-TopBar.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
-TopBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TopBar.BorderSizePixel = 0
-TopBar.Position = UDim2.new(0.0529595017, 0, 0, 0)
-TopBar.Size = UDim2.new(0, 608, 0, 56)
+gui.Name = "gui"
+gui.Parent = ScreenGui
+gui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gui.BackgroundTransparency = 1.000
+gui.BorderColor3 = Color3.fromRGB(27, 42, 53)
+gui.Position = UDim2.new(0.292867988, 0, 0.303482592, 0)
+gui.Size = UDim2.new(0, 546, 0, 315)
+gui.Visible = false
+gui.Image = "rbxassetid://3570695787"
+gui.ImageColor3 = Color3.fromRGB(70, 70, 70)
+gui.ImageTransparency = 0.200
+gui.ScaleType = Enum.ScaleType.Slice
+gui.SliceCenter = Rect.new(100, 100, 100, 100)
+gui.SliceScale = 0.120
 
 SideBar.Name = "SideBar"
-SideBar.Parent = Frame
-SideBar.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
+SideBar.Parent = gui
+SideBar.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+SideBar.BackgroundTransparency = 0.200
 SideBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SideBar.BorderSizePixel = 0
-SideBar.Size = UDim2.new(0, 162, 0, 400)
+SideBar.Position = UDim2.new(0, 0, 0.158730164, 0)
+SideBar.Size = UDim2.new(0, 546, 0, 40)
 
 JeuxButton.Name = "JeuxButton"
 JeuxButton.Parent = SideBar
-JeuxButton.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
+JeuxButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JeuxButton.BackgroundTransparency = 1.000
 JeuxButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 JeuxButton.BorderSizePixel = 0
-JeuxButton.Position = UDim2.new(0.00617283955, 0, 0.185000002, 0)
-JeuxButton.Size = UDim2.new(0, 160, 0, 50)
-JeuxButton.Font = Enum.Font.SourceSansBold
+JeuxButton.Size = UDim2.new(0, 88, 0, 40)
+JeuxButton.Font = Enum.Font.SourceSans
 JeuxButton.Text = "Jeux"
 JeuxButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 JeuxButton.TextSize = 14.000
 
 ScriptsButton.Name = "ScriptsButton"
 ScriptsButton.Parent = SideBar
-ScriptsButton.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
+ScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsButton.BackgroundTransparency = 1.000
 ScriptsButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScriptsButton.BorderSizePixel = 0
-ScriptsButton.Position = UDim2.new(0.00617283955, 0, 0.310000002, 0)
-ScriptsButton.Size = UDim2.new(0, 160, 0, 50)
-ScriptsButton.Font = Enum.Font.SourceSansBold
+ScriptsButton.Position = UDim2.new(0.161172166, 0, 0, 0)
+ScriptsButton.Size = UDim2.new(0, 88, 0, 40)
+ScriptsButton.Font = Enum.Font.SourceSans
 ScriptsButton.Text = "Scripts"
 ScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 ScriptsButton.TextSize = 14.000
 
 CreditsButton.Name = "CreditsButton"
 CreditsButton.Parent = SideBar
-CreditsButton.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
+CreditsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsButton.BackgroundTransparency = 1.000
 CreditsButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 CreditsButton.BorderSizePixel = 0
-CreditsButton.Position = UDim2.new(0.00617283955, 0, 0.435000002, 0)
-CreditsButton.Size = UDim2.new(0, 160, 0, 50)
-CreditsButton.Font = Enum.Font.SourceSansBold
+CreditsButton.Position = UDim2.new(0.322344333, 0, 0, 0)
+CreditsButton.Size = UDim2.new(0, 88, 0, 40)
+CreditsButton.Font = Enum.Font.SourceSans
 CreditsButton.Text = "Credits"
 CreditsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 CreditsButton.TextSize = 14.000
 
-TextLabel.Parent = Frame
+TopBar.Name = "TopBar"
+TopBar.Parent = gui
+TopBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopBar.BackgroundTransparency = 1.000
+TopBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopBar.BorderSizePixel = 0
+TopBar.Size = UDim2.new(0, 546, 0, 41)
+
+TextLabel.Parent = gui
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderSizePixel = 0
-TextLabel.Position = UDim2.new(0.00155763235, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 291, 0, 56)
+TextLabel.Position = UDim2.new(0.0366300382, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 133, 0, 50)
 TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "Infernium | Rip v2"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextScaled = true
+TextLabel.Text = "AstraKalf"
+TextLabel.TextColor3 = Color3.fromRGB(34, 34, 34)
 TextLabel.TextSize = 14.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(63, 63, 63)
 TextLabel.TextWrapped = true
 
 CreditsFrame.Name = "CreditsFrame"
-CreditsFrame.Parent = Frame
-CreditsFrame.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
+CreditsFrame.Parent = gui
+CreditsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CreditsFrame.BackgroundTransparency = 1.000
 CreditsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 CreditsFrame.BorderSizePixel = 0
-CreditsFrame.Position = UDim2.new(0.250778824, 0, 0.140000001, 0)
-CreditsFrame.Size = UDim2.new(0, 480, 0, 344)
+CreditsFrame.Position = UDim2.new(0, 0, 0.285714298, 0)
+CreditsFrame.Size = UDim2.new(0, 546, 0, 225)
 CreditsFrame.Visible = false
 
 TextLabel_2.Parent = CreditsFrame
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
 TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.BorderSizePixel = 0
-TextLabel_2.Position = UDim2.new(0.0270833336, 0, 0.0523255803, 0)
-TextLabel_2.Size = UDim2.new(0, 159, 0, 50)
-TextLabel_2.Font = Enum.Font.SourceSansBold
-TextLabel_2.Text = "Made By ASTRAL"
+TextLabel_2.Size = UDim2.new(0, 103, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "made by ASTRAL:"
 TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_2.TextSize = 14.000
 
 TextLabel_3.Parent = CreditsFrame
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
 TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.BorderSizePixel = 0
-TextLabel_3.Position = UDim2.new(0.0270833336, 0, 0.261627913, 0)
-TextLabel_3.Size = UDim2.new(0, 244, 0, 50)
-TextLabel_3.Font = Enum.Font.SourceSansBold
-TextLabel_3.Text = "Discord:   https://discord.gg/ZSHxuBxcYq"
+TextLabel_3.Position = UDim2.new(0.161172166, 0, 0.142222226, 0)
+TextLabel_3.Size = UDim2.new(0, 103, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Discord serveur link :    https://discord.gg/ZSHxuBxcYq"
 TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.TextSize = 14.000
 
-JeuxFrame.Name = "JeuxFrame"
-JeuxFrame.Parent = Frame
-JeuxFrame.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
-JeuxFrame.BackgroundTransparency = 1.000
-JeuxFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
-JeuxFrame.BorderSizePixel = 0
-JeuxFrame.Position = UDim2.new(0.250778824, 0, 0.140000001, 0)
-JeuxFrame.Size = UDim2.new(0, 480, 0, 344)
-
-AnimalSimulator.Name = "Animal Simulator"
-AnimalSimulator.Parent = JeuxFrame
-AnimalSimulator.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
-AnimalSimulator.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AnimalSimulator.BorderSizePixel = 0
-AnimalSimulator.Position = UDim2.new(0, 20, 0, 20)
-AnimalSimulator.Size = UDim2.new(0, 159, 0, 50)
-AnimalSimulator.Font = Enum.Font.SourceSansBold
-AnimalSimulator.Text = "Animal SImulator"
-AnimalSimulator.TextColor3 = Color3.fromRGB(0, 0, 0)
-AnimalSimulator.TextSize = 14.000
-
-BladebBall.Name = "Blade bBall"
-BladebBall.Parent = JeuxFrame
-BladebBall.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
-BladebBall.BorderColor3 = Color3.fromRGB(0, 0, 0)
-BladebBall.BorderSizePixel = 0
-BladebBall.Position = UDim2.new(0.420833319, 0, 0.0581395365, 0)
-BladebBall.Size = UDim2.new(0, 159, 0, 50)
-BladebBall.Font = Enum.Font.SourceSansBold
-BladebBall.Text = "Blade Ball"
-BladebBall.TextColor3 = Color3.fromRGB(0, 0, 0)
-BladebBall.TextSize = 14.000
-
-CombatWarriors.Name = "Combat Warriors"
-CombatWarriors.Parent = JeuxFrame
-CombatWarriors.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
-CombatWarriors.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CombatWarriors.BorderSizePixel = 0
-CombatWarriors.Position = UDim2.new(0.0416666679, 0, 0.261627913, 0)
-CombatWarriors.Size = UDim2.new(0, 159, 0, 50)
-CombatWarriors.Font = Enum.Font.SourceSansBold
-CombatWarriors.Text = "Combat Warriors"
-CombatWarriors.TextColor3 = Color3.fromRGB(0, 0, 0)
-CombatWarriors.TextSize = 14.000
-
-Strongestbattlground.Name = "Strongest battlground"
-Strongestbattlground.Parent = JeuxFrame
-Strongestbattlground.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
-Strongestbattlground.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Strongestbattlground.BorderSizePixel = 0
-Strongestbattlground.Position = UDim2.new(0.420833319, 0, 0.261627913, 0)
-Strongestbattlground.Size = UDim2.new(0, 159, 0, 50)
-Strongestbattlground.Font = Enum.Font.SourceSansBold
-Strongestbattlground.Text = "Strongest battlground"
-Strongestbattlground.TextColor3 = Color3.fromRGB(0, 0, 0)
-Strongestbattlground.TextSize = 14.000
-
-Rivals.Name = "Rivals"
-Rivals.Parent = JeuxFrame
-Rivals.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
-Rivals.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Rivals.BorderSizePixel = 0
-Rivals.Position = UDim2.new(0.0416666679, 0, 0.46802327, 0)
-Rivals.Size = UDim2.new(0, 159, 0, 50)
-Rivals.Font = Enum.Font.SourceSansBold
-Rivals.Text = "Rivals"
-Rivals.TextColor3 = Color3.fromRGB(0, 0, 0)
-Rivals.TextSize = 14.000
-
 ScriptsFrame.Name = "ScriptsFrame"
-ScriptsFrame.Parent = Frame
-ScriptsFrame.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
+ScriptsFrame.Parent = gui
+ScriptsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScriptsFrame.BackgroundTransparency = 1.000
 ScriptsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScriptsFrame.BorderSizePixel = 0
-ScriptsFrame.Position = UDim2.new(0.250778824, 0, 0.140000001, 0)
-ScriptsFrame.Size = UDim2.new(0, 480, 0, 344)
+ScriptsFrame.Position = UDim2.new(0, 0, 0.285714298, 0)
+ScriptsFrame.Size = UDim2.new(0, 546, 0, 225)
 ScriptsFrame.Visible = false
 
-Admin.Name = "Admin"
-Admin.Parent = ScriptsFrame
-Admin.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
-Admin.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Admin.BorderSizePixel = 0
-Admin.Position = UDim2.new(0, 20, 0, 20)
-Admin.Size = UDim2.new(0, 159, 0, 50)
-Admin.Font = Enum.Font.SourceSansBold
-Admin.Text = "Admin"
-Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
-Admin.TextSize = 14.000
-
-TextButton.Parent = ScreenGui
-TextButton.BackgroundColor3 = Color3.fromRGB(113, 53, 202)
+TextButton.Parent = ScriptsFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.487101674, 0, 0.0858208984, 0)
-TextButton.Size = UDim2.new(0, 34, 0, 31)
-TextButton.Font = Enum.Font.SourceSansBold
-TextButton.Text = "Open"
+TextButton.Position = UDim2.new(0, 0, 0.0897778347, 0)
+TextButton.Size = UDim2.new(0, 88, 0, 38)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Admin"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
 
+TextButton_2.Parent = ScriptsFrame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.186813191, 0, 0.0897778347, 0)
+TextButton_2.Size = UDim2.new(0, 88, 0, 38)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Aimbot/Esp"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+JeuxFrame.Name = "JeuxFrame"
+JeuxFrame.Parent = gui
+JeuxFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JeuxFrame.BackgroundTransparency = 1.000
+JeuxFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JeuxFrame.BorderSizePixel = 0
+JeuxFrame.Position = UDim2.new(0, 0, 0.285714298, 0)
+JeuxFrame.Size = UDim2.new(0, 546, 0, 225)
+JeuxFrame.Visible = false
+
+TextButton_3.Parent = JeuxFrame
+TextButton_3.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.0109890113, 0, 0.102222219, 0)
+TextButton_3.Size = UDim2.new(0, 88, 0, 38)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Animal Sim"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+
+TextButton_4.Parent = JeuxFrame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0.214285716, 0, 0.102222219, 0)
+TextButton_4.Size = UDim2.new(0, 88, 0, 38)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Combat Warriors"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 14.000
+
+TextButton_5.Parent = JeuxFrame
+TextButton_5.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0.419413924, 0, 0.102222219, 0)
+TextButton_5.Size = UDim2.new(0, 88, 0, 38)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Rivals"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 14.000
+
+TextLabel_4.Parent = gui
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.833333313, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 133, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "1.0.0"
+TextLabel_4.TextColor3 = Color3.fromRGB(34, 34, 34)
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextStrokeColor3 = Color3.fromRGB(63, 63, 63)
+TextLabel_4.TextWrapped = true
+
+ImageLabel.Parent = gui
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Size = UDim2.new(0, 58, 0, 50)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=79996104359280"
+
+ImageButton.Parent = ScreenGui
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.473444611, 0, 0.055970151, 0)
+ImageButton.Size = UDim2.new(0, 36, 0, 33)
+ImageButton.Image = "http://www.roblox.com/asset/?id=79996104359280"
+
 -- Scripts:
 
-local function JWSITFX_fake_script() -- JeuxButton.LocalScript 
+local function UFVUHPM_fake_script() -- JeuxButton.LocalScript 
 	local script = Instance.new('LocalScript', JeuxButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.JeuxFrame.Visible = true
-		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
 		script.Parent.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
 	end)
 end
-coroutine.wrap(JWSITFX_fake_script)()
-local function PMRBT_fake_script() -- ScriptsButton.LocalScript 
+coroutine.wrap(UFVUHPM_fake_script)()
+local function XURXG_fake_script() -- ScriptsButton.LocalScript 
 	local script = Instance.new('LocalScript', ScriptsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.JeuxFrame.Visible = false
-		script.Parent.Parent.Parent.ScriptsFrame.Visible = true
 		script.Parent.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.Parent.ScriptsFrame.Visible = true
 	end)
 end
-coroutine.wrap(PMRBT_fake_script)()
-local function MSWXFTL_fake_script() -- CreditsButton.LocalScript 
+coroutine.wrap(XURXG_fake_script)()
+local function SQQQ_fake_script() -- CreditsButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Parent.JeuxFrame.Visible = false
-		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
 		script.Parent.Parent.Parent.CreditsFrame.Visible = true
+		script.Parent.Parent.Parent.ScriptsFrame.Visible = false
 	end)
 end
-coroutine.wrap(MSWXFTL_fake_script)()
-local function FOTAYTZ_fake_script() -- AnimalSimulator.LocalScript 
-	local script = Instance.new('LocalScript', AnimalSimulator)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Golddeathninja/af/refs/heads/main/a"))()
-	end)
-end
-coroutine.wrap(FOTAYTZ_fake_script)()
-local function YVJRLO_fake_script() -- BladebBall.LocalScript 
-	local script = Instance.new('LocalScript', BladebBall)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://infernium.xyz/Blade.lua",true))()
-	end)
-end
-coroutine.wrap(YVJRLO_fake_script)()
-local function WXHXY_fake_script() -- CombatWarriors.LocalScript 
-	local script = Instance.new('LocalScript', CombatWarriors)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://infernium.xyz/cwfree.lua",true))()
-	end)
-end
-coroutine.wrap(WXHXY_fake_script)()
-local function MATG_fake_script() -- Strongestbattlground.LocalScript 
-	local script = Instance.new('LocalScript', Strongestbattlground)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://infernium.xyz/tsb.lua",true))()
-	end)
-end
-coroutine.wrap(MATG_fake_script)()
-local function NCLOM_fake_script() -- Rivals.LocalScript 
-	local script = Instance.new('LocalScript', Rivals)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/zeynwq/main/main/rivals1"))()()
-	end)
-end
-coroutine.wrap(NCLOM_fake_script)()
-local function ODRDJ_fake_script() -- Admin.LocalScript 
-	local script = Instance.new('LocalScript', Admin)
+coroutine.wrap(SQQQ_fake_script)()
+local function FRFSKPS_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end)
 end
-coroutine.wrap(ODRDJ_fake_script)()
-local function REAS_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
+coroutine.wrap(FRFSKPS_fake_script)()
+local function FXQRKS_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
-			script.Parent.Parent.Frame.Visible = not script.Parent.Parent.Frame.Visible
+		local ESP_Color = Color3.fromRGB(128, 0, 128) -- Violet
+		local function createESP(player)
+			if player.Character then
+				local highlight = Instance.new("Highlight")
+				highlight.Parent = player.Character
+				highlight.FillColor = ESP_Color
+				highlight.FillTransparency = 0.5
+				highlight.OutlineColor = Color3.new(1,1,1)
+				highlight.OutlineTransparency = 0
+			end
+		end
+	
+		local function onPlayerAdded(player)
+			createESP(player)
+			player.CharacterAdded:Connect(function()
+				createESP(player)
+			end)
+		end
+	
+		for _, player in pairs(game.Players:GetPlayers()) do
+			createESP(player)
+		end
+	
+		game.Players.PlayerAdded:Connect(onPlayerAdded)
 	end)
 end
-coroutine.wrap(REAS_fake_script)()
+coroutine.wrap(FXQRKS_fake_script)()
+local function OOLX_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Golddeathninja/af/refs/heads/main/a"))()
+	end)
+end
+coroutine.wrap(OOLX_fake_script)()
+local function FJVMPK_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://infernium.xyz/cwfree.lua",true))()
+	end)
+end
+coroutine.wrap(FJVMPK_fake_script)()
+local function XHCS_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/zeynwq/main/main/rivals1"))()()
+	end)
+end
+coroutine.wrap(XHCS_fake_script)()
+local function YBHPCI_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.gui.Visible = not script.Parent.Parent.gui.Visible
+	end)
+end
+coroutine.wrap(YBHPCI_fake_script)()
